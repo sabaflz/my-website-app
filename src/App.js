@@ -1,20 +1,32 @@
-import './App.css';
+import { useSelector } from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { ThemeProvider } from '@mui/material/styles';
+import { CssBaseline, StyledEngineProvider } from '@mui/material';
+
+// routing
+import Routes from 'routes';
+
+// defaultTheme
+import themes from 'themes';
+
+// project imports
+import NavigationScroll from 'layout/NavigationScroll';
+
+// ==============================|| APP ||============================== //
+
+const App = () => {
+    const customization = useSelector((state) => state.customization);
+
+    return (
+        <StyledEngineProvider injectFirst>
+            <ThemeProvider theme={themes(customization)}>
+                <CssBaseline />
+                <NavigationScroll>
+                    <Routes />
+                </NavigationScroll>
+            </ThemeProvider>
+        </StyledEngineProvider>
+    );
+};
 
 export default App;
