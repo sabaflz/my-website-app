@@ -1,0 +1,16 @@
+header {
+    text-align: center;
+    /* font-weight: bold; */
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    /* padding: 10px; */
+    background-color: rgb(97, 4, 72);
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    /* font-family: "McLaren", cursive; */
+    /* font-weight: 200; */
+  }
