@@ -1,9 +1,14 @@
 import '../styles/Header.css'
 
-function Header() {
+function Header(props) {
+
+    const title = props.title;
     return(
         <div>
-            <header><h1>Notes</h1></header>
+            <header>
+                
+                <h1>{title}</h1>
+            </header>
         </div>
     );
 }

@@ -3,17 +3,17 @@ const birthdays = [
     {
         fname: 'angela',
         lname: 'pineapple',
-        birthdate: 'sep 10 1985'
+        birthdate: {month:'sep', day: 1, year: '1985'}
     },
     {
         fname: 'jack',
         lname: 'blue',
-        birthdate: 'feb 27 1990'
+        birthdate: {month:'feb', day: 27, year: '1990'}
     },
     {
         fname: 'violet',
         lname: 'bloomingdale',
-        birthdate: 'jun 23 1978'
+        birthdate: {month:'jun', day: 23, year: '1978'}
     }
 
 ]

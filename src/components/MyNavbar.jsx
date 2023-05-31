@@ -1,23 +1,10 @@
-// import React from 'react'
-import '../styles/App.css'
-import MyNavbar from './MyNavbar'
-import Header from './Header'
-import Footer from './Footer'
-import Note from './Pages/Notes/Note'
-import Birthday from './Pages/Birthdays/Birthday'
-
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-
-
-
-function App() {
-  return (
-    <div className="App">
-      <Header title = 'Notes' />
+function MyNavbar() {
+    return(
+    <>
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
@@ -51,13 +38,8 @@ function App() {
           </Nav>
         </Container>
       </Navbar>
-
-      {/* <MyNavbar /> */}
-      <Note />
-      <Birthday />
-      <Footer />
-    </div>
+    </>
   );
 }
 
-export default App;
+export default MyNavbar;
